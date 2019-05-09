@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/interaction.css" type='text/css'>
+        <link rel="stylesheet" href="https://use.typekit.net/srn8fcr.css">
+        <script src="interaction.js"></script>
+        <audio loop id="ratsound1" src="sounds/badbutton1.wav"></audio>
+        <audio loop id="ratsound2" src="sounds/badbutton2.wav"></audio>
+        <audio loop id="ratsound3" src="sounds/rat-gnaw-2.wav"></audio>
+    </head>
+    <body>
+        <div id="woop">
+            <h1>Once you are unable to hear any more rats,<br>you will know you have exterminated them.</h1>
+            <button id="startbt" onclick="startInteraction()"><h3>NEXT</h3></button>
+         </div>
+        <!--INTERACTION DIVS-->
+        <button class="rat" id="ratdiv1" onclick="killrat1()"></button>
+        <button class="rat" id="ratdiv2" onclick="killrat2()"></button>
+        <button class="rat" id="ratdiv3" onclick="killrat3()"></button>
+    </body>
+</html>

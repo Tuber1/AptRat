@@ -1,0 +1,178 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    overflow:hidden;
+}
+
+body {
+    background: #000;  
+}
+
+
+@keyframes bg{
+    0% {transform: rotate(0deg) translate(30px) rotate(0deg) scale(1,1);}
+    40% {transform:rotate(180deg) translate(30px) rotate(-180deg) scale(1.5,1);}
+    100% {transform: rotate(360deg) translate(30px) rotate(-360deg) scale(1,1);}
+}
+
+/* Opening */
+#start {
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height:100vh;
+    background-color: black;
+    z-index: 100;
+}
+
+#start h1{
+    font-family: 'aktiv-grotesk',sans-serif;
+    font-size: 10vw;
+    color: white;
+    font-weight: 100;
+    transition:.2s;
+    transition-timing-function: ease;
+}
+
+#start h1:hover{
+    color:gray;
+    transition-timing-function: ease;
+    transition:.2s;
+}
+
+#light3, #light4, #end, #end2, #end3{
+    display: none;
+}
+
+/*First Scene*/
+
+#light1, #light2 {
+    position:absolute;
+    left:-25vw;
+    top:-50vh;
+    width: 150vw;
+    height: 150vh;
+}
+
+#light1{
+    background-image: -webkit-radial-gradient(51% 50%, circle, #8D7655, rgba(8,16,28,0) 40%);
+     -webkit-animation:bg 12s linear infinite;
+}
+
+#light2{
+    background-image: -webkit-radial-gradient(49% 50%, circle, #8D7655, rgba(8,16,28,0) 40%);
+     -webkit-animation:bg 10s linear infinite;
+}
+
+#shadow1{
+    position: absolute;
+    left:-25vw;
+    top:-20vh;
+    width:100vw;
+    height:200vh;
+    background-image: -webkit-radial-gradient(50% 50%, circle, #000, rgba(8,16,28,0) 45%);
+     -webkit-animation:bg 8s linear infinite;
+}
+
+#shadow2{
+    position: absolute;
+    left:35vw;
+    top:-20vh;
+    width:100vw;
+    height:200vh;
+    background-image: -webkit-radial-gradient(50% 50%, circle, #000, rgba(8,16,28,0) 45%);
+    -webkit-animation:bg 12s linear infinite;
+}
+
+#shadow3{
+    position: absolute;
+    left:65vw;
+    top:30vh;
+    width:70vw;
+    height:70vh;
+    background-image: -webkit-radial-gradient(50% 50%, circle, #000, rgba(8,16,28,0) 45%);
+    -webkit-animation:bg 6s linear infinite;
+}
+
+#shadow4{
+    position: absolute;
+    left:-30vw;
+    top:5vh;
+    width:70vw;
+    height:70vh;
+    background-image: -webkit-radial-gradient(50% 50%, circle, #000, rgba(8,16,28,0) 45%);
+    -webkit-animation:bg 6s linear infinite;
+}
+
+/*Second Scene*/
+
+#light3{
+    position: absolute;
+    left:-100vw;
+    top:-140vh;
+    width:300vw;
+    height:300vh;
+    background-image: -webkit-radial-gradient(50% 50%, circle, rgba(85,140,141,50%), rgba(8,16,28,0) 45%);
+     -webkit-animation:bg 8s linear infinite;
+}
+
+#light4{
+    position: absolute;
+    z-index:20;
+    left:0vw;
+    top:-50vh;
+    width:100vw;
+    height:100vh;
+    background-image: -webkit-radial-gradient(50% 50%, circle, rgba(141,123,85,50%), rgba(8,16,28,0) 45%);
+     -webkit-animation:bg 8s linear infinite;
+}
+
+/*END*/
+
+#end {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    z-index:120;
+    opacity:0;
+    color: white;
+    font-family: 'aktiv grotesk',sans-serif;
+    font-weight: 100;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align:center;
+    padding:5vw;
+    box-sizing: border-box;
+}
+
+#end h3 {
+    font-size:2vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+#end h1 {
+    font-size: 4vw;
+}
+
+.endbt {
+    background:none;
+    color: white;
+    font-family: 'aktiv grotesk', sans-serif;
+    border: none;
+    margin: none;
+    padding:none;
+    font-size: 2vw;
+    font-weight:100;
+}
+
+#end2 a {
+    text-decoration: none;
+}

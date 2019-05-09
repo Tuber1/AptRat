@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href="css/main.css" type="text/css">
+        <link rel='stylesheet' href="css/button.css" type="text/css">
+        <link rel='stylesheet' href='css/badbutton.css' type='text/css'>
+        <link rel='stylesheet' href="css/light.css" type='text/csss'>
+        <link rel="stylesheet" href="https://use.typekit.net/srn8fcr.css">
+        <script src="actions.js"></script>
+        <!--<link rel='stylesheet' href='css/gradients.css' type='text/css'>
+        <script src="gradients.js"></script>-->
+        <audio id="walk" src="sounds/walkingEdit.wav"></audio>
+        <audio loop id="gnaw" src="sounds/rat-gnaw.wav"></audio>
+        <audio id="switch" src="sounds/switchOff.wav"></audio>
+        <audio id="badbutton1" src="sounds/badbutton1.wav"></audio>
+        <audio id="badbutton2" src="sounds/badbutton2.wav"></audio>
+        <audio id="dooropen" src="sounds/opendoor.wav"></audio>
+        <audio loop id="outsidesiren" src='sounds/distant_sirens.mp3'></audio>
+        <audio loop id="subtlerustle" src="sounds/subtlerustle.wav"></audio>
+        <audio id="doorclose" src="sounds/doorcloselock.wav"></audio>
+        <audio id="stomp" src="sounds/stomp_edit.wav"></audio>
+        <audio id="stompscurry" src="sounds/stompscurry.wav"></audio>
+        <audio id="step1" src="sounds/step1.wav"></audio>
+        <audio id="step2" src="sounds/step2.wav"></audio>
+        <audio id="step3" src="sounds/step3.wav"></audio>
+        <audio id="step4" src="sounds/step4.wav"></audio>
+        <audio id="step5" src="sounds/step5.wav"></audio>
+        <audio id="fence" src="sounds/fence.wav"></audio>
+        <audio id="finalwalk" src="sounds/finalwalkloop.wav"></audio>
+     
+        
+    </head>
+    <body>
+        <script>
+        // for every element in the body tag
+        $("*", "body").each(function() {
+            // parse out its computed font size, and see if it is less than 12
+            if ( parseInt($(this).css("font-size"), 10) < 12 )
+                // if so, then manually give it a CSS property of 12px
+                $(this).css("font-size", "12px")
+        });
+        </script>
+        <div id="start"> <h1 onclick="start()">BEGIN</h1></div>
+        <!--Opening Lights-->
+        <div>
+            <div id="lightbg1"></div>
+            <div id="light1"></div>
+            <div id="light2"></div>
+            <div id="shadow1"></div>
+            <div id="shadow2"></div>
+            <div id="shadow3"></div>
+            <div id="shadow4"></div>
+        </div>
+        <!--Outside Lights-->
+        <div>
+            <div id="light3"></div>
+            <div id="light4"></div>
+        </div>
+        <!--Walk To Door-->
+        <button onclick="action1()" class="button" id='action1'></button>
+        <button onclick="badbutton1()" class="badbutton" id="bb1"></button>
+        <button onclick="badbutton2()" class="badbutton" id="bb2"></button>
+        <button onclick="badbutton1()" class="badbutton" id="bb3"></button>
+        <!--Turn Light Off-->
+        <button onclick="action2()" class="button" id='action2'></button>
+        <!--Open Door-->
+        <button onclick="action3()" class="button" id='action3'></button>
+        <!--Close Door-->
+        <button onclick="action4()" class="button" id="action4"></button>
+        <!--Stomp-->
+        <button onclick="action5()" class="button" id="action5"></button>
+        <!--Steps-->
+        <button onclick="stepOne()" class="button" id="stepone"></button>
+        <button onclick="stepTwo()" class="button" id="steptwo"></button>
+        <button onclick="stepThree()" class="button" id="stepthree"></button>
+        <button onclick="stepFour()" class="button" id="stepfour"></button>
+        <button onclick="stepFive()" class="button" id="stepfive"></button>
+        <!--Open Gate-->
+        <button onclick="action6()" class="button" id="action6"></button>
+        <!--Walk Away-->
+        <button onclick="action7()" class="button" id="action7"></button>
+        <!--END-->
+        <div id="end">
+            <div id="end1">
+                <h3>Congratulations.</h3>
+                <h1>You have made it out of the apartment.</h1>
+                <h1>But you're not out of it yet.</h1>
+                <h1>Now you must get rid of all the rats.</h1>
+                <button class="endbt" id="endbt1" onclick="end1()"><h3>NEXT</h3></button>
+            </div>
+            <div id="end2">
+                <h1>Go around the room finding the rats as you hear them.</h1>
+                <h1>Click them in order to dispose of them.</h1>
+                <a class="endbt" id="endbt2" href="interaction.html"><h3>NEXT</h3></a>
+            </div>
+        </div>
+    </body>
+</html>

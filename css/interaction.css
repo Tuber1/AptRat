@@ -1,0 +1,82 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    overflow:hidden;
+}
+
+body {
+    background: #000;  
+}
+
+#startbt{
+    background:none;
+    border: none;
+    color:white;
+    font-weight:100;
+}
+
+h1 {
+    font-size: 3vw;
+}
+
+h3 {
+    font-size: 2vw;
+    margin-top: 3vh;    
+}
+
+#woop {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    height:100vh;
+    z-index:99;
+    color:white;
+    font-family: 'aktiv grotesk',sans-serif;
+    font-weight:100;
+    text-align: center;
+}
+
+/*BUTTONS*/
+
+#ratbt1, #ratbt2, #ratbt3 {
+    display:none;
+}
+
+@keyframes button{
+    0% {transform: rotate(0deg) translate(10vw) rotate(0deg) scale(1,1);}
+    40% {transform:rotate(180deg) translate(10vw) rotate(-180deg) scale(1.5,1);}
+    100% {transform: rotate(360deg) translate(10vw) rotate(-360deg) scale(1,1);}
+}
+
+.rat {
+    z-index:50;
+    position: absolute;
+    border: none;
+    width:20vw;
+    height:20vw;
+    cursor: grab;
+    background:none;
+    background-image: -webkit-radial-gradient(50% 50%, rgba(230,230,230,20%), transparent 50%);
+    -webkit-animation: button 2s linear infinite;
+}
+
+#ratbt1{
+    top:30vh;
+    left:20vw;
+}
+
+#ratbt2{
+    top:80vh;
+    left:80vw;
+}
+
+#ratbt3{
+    top:60vh;
+    left:40vw;
+}

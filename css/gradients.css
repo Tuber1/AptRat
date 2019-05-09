@@ -1,0 +1,23 @@
+/* line 3, /Users/nlucaccioni/Documents/2018,2019/Semester 2/Graphic Design Int/Project 3/website/scss/gradients.scss */
+#stuff {
+  --x: 15%;
+  --y: 15%;
+  background: radial-gradient(circle at var(--x) var(--y), #f90, #444 15%);
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+  background-position: 50% 500%;
+  animation: a 0s linear -2.3s alternate infinite;
+  animation-name: x, y;
+  animation-duration: 1s, .9s; }
+
+@keyframes x {
+  to {
+    --x: 85%; } }
+
+@keyframes y {
+  to {
+    --y: 85%; } }
+
+/*# sourceMappingURL=gradients.css.map */
