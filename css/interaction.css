@@ -8,6 +8,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     overflow:hidden;
 }
 
+a:hover {
+    cursor:pointer;
+}
+
+.rat {
+    outline: 
+}
+
 body {
     background: #000;  
 }
@@ -44,7 +52,7 @@ h3 {
 
 /*BUTTONS*/
 
-#ratbt1, #ratbt2, #ratbt3 {
+#ratbt1, #ratbt2, #ratbt3, #ratbt4 {
     display:none;
 }
 

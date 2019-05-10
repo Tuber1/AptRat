@@ -8,6 +8,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     overflow:hidden;
 }
 
+a:hover {
+    cursor:pointer;
+}
+
 body {
     background: #000;  
 }
@@ -17,6 +21,10 @@ body {
     0% {transform: rotate(0deg) translate(30px) rotate(0deg) scale(1,1);}
     40% {transform:rotate(180deg) translate(30px) rotate(-180deg) scale(1.5,1);}
     100% {transform: rotate(360deg) translate(30px) rotate(-360deg) scale(1,1);}
+}
+
+.button:focus, .badbutton:focus {
+    outline:0;
 }
 
 /* Opening */
